@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
         // send data to browser
         var output;
         if(dataToSend) output = dataToSend.split(" ").slice(5).filter(Boolean);
-        else output = "";
+        else output = "Not Found";
         res.send(output)
     });
     
